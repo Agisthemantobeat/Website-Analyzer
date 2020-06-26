@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/mdb.min.css.map" />
-    <title>Webssite|Analyzer</title>
+    <title>Website|Analyzer</title>
     <style>
         .avatar-pic {
             width: 150px;
@@ -66,7 +66,7 @@
     </nav>
     <div class="alert alert-success alert-dismissible fade show my-0" role="alert">
         <strong>Website Analyzer! Anytime! Anywhere!</strong> Check whether your website is working or not.<br />
-        <strong> Just provide the name of urls in first column of your excel and name the second and third column as Website Status and Website Status Code.</strong>
+        <strong> Just provide the name of urls in first column of your excel....</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

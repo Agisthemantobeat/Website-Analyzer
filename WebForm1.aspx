@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/mdb.min.css.map" />
-    <title>Webssite|Analyzer</title>
+    <title>Website|Analyzer</title>
     <style>
         .avatar-pic {
             width: 150px;
@@ -22,6 +22,12 @@
         .row img {
             width: 200px;
             margin: auto;
+        }
+        .auto-style1 {
+            margin-top: 3px;
+        }
+        .auto-style3 {
+            margin-left: 0px;
         }
         </style>
 </head>
@@ -63,7 +69,7 @@
     </nav>
     <div class="alert alert-success alert-dismissible fade show my-0" role="alert">
         <strong>Website Analyzer! Anytime! Anywhere!</strong> Check whether your website is working or not.<br />
-        <strong> Just provide the name of urls in first column of your excel and name the second and third column as Website Status and Website Status Code.</strong>
+        <strong> Just provide the name of urls in first column of your excel... </strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -72,8 +78,10 @@
     <br>
             <!-- ADD A GRIDVIEW CONTROL. -->
             <div>
-                <asp:GridView ID="GridView1"  class="mx-auto" CssClass="Grid" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="243px" style="margin: auto;" Width="598px">
-                    <AlternatingRowStyle BackColor="White" />
+                <asp:GridView ID="GridView1"  class="mx-auto" CssClass="Grid" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="243px" style="margin: auto;" Width="598px" >
+                
+         
+                        <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -84,13 +92,34 @@
                     <SortedAscendingHeaderStyle BackColor="#246B61" />
                     <SortedDescendingCellStyle BackColor="#D4DFE1" />
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
+                    
                 </asp:GridView>
                 
              
             </div>
+    <div class="container">
+    <p class="h3 text-center"> Want to download the file or want to receive it in mail.... </p>
     <asp:Button ID="Button1" class="btn btn-success text-center"  style="margin-left:600px;" runat="server" Text="Download" OnClick="Button1_Click" />
-     
+    <!-- Material input -->
+        <div class="row">
+<div class="auto-style1">
+    
+  <i class="fas fa-user input-prefix"></i>
+      <label for="prefixInside mx-auto" style ="margin-left:250px;">Name</label>
+  <asp:TextBox ID="TextBox3" runat="server"  class="form-control mx-auto my-0" Width="400px" CssClass="auto-style3"></asp:TextBox>
+ </div> </div>
+    <!-- Material input -->
+    <div class="row">
+<div class="auto-style1">
+    
+  <i class="fas fa-user input-prefix"></i>
+      <label for="prefixInside mx-auto" style ="margin-left:250px;">Email</label>
+  <asp:TextBox ID="TextBox1" runat="server"  class="form-control mx-auto my-0" Width="400px" CssClass="auto-style3"></asp:TextBox>
+ </div> </div>
+         <asp:Button ID="Button2" class="btn btn-success text-center"  style="margin-left:600px;" runat="server" Text="Get on mail" OnClick="Button2_Click"  />
+         <p class="h3 text-center" id="p2" runat="server"> Mail sent successfully....  </p>
     </form>
+
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
